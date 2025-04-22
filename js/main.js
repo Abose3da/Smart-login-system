@@ -149,9 +149,9 @@ function login() {
     })
   );
 
-  // Redirect after delay
+
   setTimeout(() => {
-    window.location.href = "home.html"; // Change to your dashboard page
+    window.location.href = "home.html"; 
   }, 1500);
 
   return true;
