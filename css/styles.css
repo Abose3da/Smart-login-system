@@ -1,0 +1,39 @@
+main {
+  height: 80vh;
+}
+
+.mainBg {
+  background-color: #24353f;
+}
+
+.shadow-cm {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.mainColor {
+  color: RGB(23, 162, 184);
+}
+
+.gBtn {
+  background-color: #24353f;
+  color: RGB(23, 162, 184);
+  border: 1px solid RGB(23, 162, 184);
+}
+.gBtn:hover {
+  background-color: RGB(23, 162, 184);
+  color: white;
+}
+
+.logout {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  background-color: #24353f;
+  color: RGB(23, 162, 184);
+  border: 1px solid RGB(23, 162, 184);
+}
+.logout:hover {
+  background-color: RGB(23, 162, 184);
+  color: white;
+  border: 1px solid transparent;
+}

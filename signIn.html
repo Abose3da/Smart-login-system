@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mainBg">
+    <main class="">
+      <div
+        class="container w-100 h-100 mt-5 d-flex justify-content-center align-items-start"
+      >
+        <div class="inner shadow-cm p-5 w-50">
+          <h1 class="mainColor mb-5 text-center">Smart Login System</h1>
+          <input id="signinEmail"
+            class="form-control mb-3"
+            type="text"
+            placeholder="Enter your email"
+            
+          />
+          <input
+            id="signinPassword"
+            class="form-control mb-4"
+            type="password"
+            placeholder="Enter your password"
+            />
+            <p id="wrongInput" class="d-none text-danger text-center">incorrect email or password</p>
+            <p id="inInputsError" class="d-none text-danger text-center">All inputs is required</p>
+          <button id="signinBtn" onclick="login()" class="border-1 py-1 gBtn w-100 mb-2 rounded-1">Login</button>
+          <p id="loginSuccess" class="d-none text-center alert alert-success">
+            Login successful! Redirecting...
+          </p>
+          <p class="text-light text-center">
+            Don’t have an account? <a class="  link-underline link-underline-opacity-0 link-underline-opacity-75-hover"" href="signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

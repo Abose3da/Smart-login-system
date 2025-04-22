@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mainBg">
+    <main class="">
+      <div
+        class="container w-100 h-100 mt-5 d-flex justify-content-center align-items-start"
+      >
+        <div class="inner shadow-cm p-5 w-50">
+          <h1 class="mainColor mb-5 text-center">Smart Login System</h1>
+          <input
+            id="signupName"
+            class="form-control mb-3"
+            type="email"
+            placeholder="Enter your name"
+            
+          />
+          <input
+          oninput="validateSignupEmail()"
+            id="signupEmail"
+            class="form-control mb-3 is-valid is-invalid"
+            type="email"
+            placeholder="Enter your email"
+
+          />
+          <p id="validEmail"  class="d-none text-danger text-center">Write a valid email</p>
+          <input
+            id="signupPassword"
+            class="form-control mb-4"
+            type="password"
+            placeholder="Enter a password"
+          />
+          <p id="errorInputs" class="d-none text-danger text-center">All inputs is required</p>
+          <p id="duplicateEmail" class="d-none text-danger text-center">Email already exists!</p>
+          <p id="successMessage" class="d-none text-success text-center">user was created continue to sign in </p>
+          
+            
+          <button class="border-1 py-1 gBtn w-100 " onclick="addUser()">Submit</button>
+          <p class="text-light text-center mt-5">
+            Already have an account? <a class="  link-underline link-underline-opacity-0 link-underline-opacity-75-hover"" href="signIn.html">Sign in</a>
+          </p>
+
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
